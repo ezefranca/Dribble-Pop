@@ -12,4 +12,7 @@
 
 @interface ShotsRequester : Requester
 
+
+-(void)getPopularPostsWithSuccessBlock:(void (^)(NSArray *results))successBlock errorBlock:(void (^)(NSError *error))errorBlock ;
+
 @end

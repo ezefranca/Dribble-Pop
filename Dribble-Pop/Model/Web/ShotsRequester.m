@@ -11,7 +11,7 @@
 
 @implementation ShotsRequester
 
--(void)getPopularPostsWithSuccessBlock:(void (^)(NSArray *results))successBlock errorBlock:(void (^)(NSError *error))errorBlock :(int)page :(BOOL)isVip{
+-(void)getPopularPostsWithSuccessBlock:(void (^)(NSArray *results))successBlock errorBlock:(void (^)(NSError *error))errorBlock {
     
     RKResponseDescriptor *responseDescriptor =  [RKResponseDescriptor responseDescriptorWithMapping:[Shots mappingForEntity]
                                                                                              method:RKRequestMethodGET

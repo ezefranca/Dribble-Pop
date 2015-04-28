@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShotsRequester.h"
 
 @interface ViewController : UIViewController
 
