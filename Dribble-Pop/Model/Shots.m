@@ -10,43 +10,43 @@
 
 @implementation Shots
 
-//+ (RKObjectMapping *) mappingForEntity {
-//    RKObjectMapping *postMapping = [RKObjectMapping mappingForClass:[Shots class]];
-//    [postMapping addAttributeMappingsFromDictionary:@{
-//                                                      @"id"  : @"shotID",
-//                                                      @"title"  : @"shotTitle",
-//                                                      @"description"  : @"shotDescription",
-//                                                      @"height": @"shotHeight",
-//                                                      @"likes_count": @"shotWidth",
-//                                                      @"UsuCodigo": @"shotLikesCount",
-//                                                      @"comments_count": @"shotCommentsCount",
-//                                                      @"rebounds_count": @"shotReboundsCount",
-//                                                      
-//                                                      @"url" : @"shotURL",
-//                                                      @"short_url" : @"shotURLshort",
-//                                                      @"views_count" : @"shotViewsCount",
-//                                                      @"rebound_source_id" : @"shotReboundID",
-//                                                      @"image_url": @"shotImgURL",
-//                                                      @"image_teaser_url" : @"shotImgTeaserURL",
-//                                                      @"player" : @"players",
-//                                                      
-//                                                      
-//                                                      @"attachments_count"
-//                                                      @"buckets_count"
-//                                                      @"created_at"
-//                                                      @"updated_at"
-//                                                      @"html_url"
-//                                                      @"attachments_url"
-//                                                      @"buckets_url" :
-//                                                      @"comments_url" :
-//                                                      @"likes_url" :
-//                                                      @"projects_url" :
-//                                                      @"rebounds_url" : "@"shotReboundUrl",
-//                                                      @"tags": @"",
-//                                                      
-//                                                      }];
-//    return postMapping;
-//}
++ (RKObjectMapping *) mappingForEntity {
+    RKObjectMapping *postMapping = [RKObjectMapping mappingForClass:[Shots class]];
+    [postMapping addAttributeMappingsFromDictionary:@{
+                                                      @"id"  : @"shotID",
+                                                      @"title"  : @"shotTitle",
+                                                      @"description"  : @"shotDescription",
+                                                      @"height": @"shotHeight",
+                                                      @"likes_count": @"shotWidth",
+                                                      @"UsuCodigo": @"shotLikesCount",
+                                                      @"comments_count": @"shotCommentsCount",
+                                                      @"rebounds_count": @"shotReboundsCount",
+                                                      
+                                                      @"url" : @"shotURL",
+                                                      @"short_url" : @"shotURLshort",
+                                                      @"views_count" : @"shotViewsCount",
+                                                      @"rebound_source_id" : @"shotReboundID",
+                                                      @"image_url": @"shotImgURL",
+                                                      @"image_teaser_url" : @"shotImgTeaserURL",
+                                                      @"player" : @"players",
+                                                      
+                                                      
+                                                      @"attachments_count" : @"",
+                                                      @"buckets_count" : @"",
+                                                      @"created_at" : @"",
+                                                      @"updated_at" : @"",
+                                                      @"html_url" : @"",
+                                                      @"attachments_url" : @"" ,
+                                                      @"buckets_url" : @"",
+                                                      @"comments_url" : @"",
+                                                      @"likes_url" : @"",
+                                                      @"projects_url" : @"",
+                                                      @"rebounds_url" : @"shotReboundUrl",
+                                                      @"tags": @""
+                                                      
+                                                      }];
+    return postMapping;
+}
 
 @end
 

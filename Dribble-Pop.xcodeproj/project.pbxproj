@@ -21,6 +21,7 @@
 		F7FC73161AEFCC1E0056C96A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73151AEFCC1E0056C96A /* Player.m */; };
 		F7FC73191AEFD3FD0056C96A /* ShotImages.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73181AEFD3FD0056C96A /* ShotImages.m */; };
 		F7FC731C1AEFD8180056C96A /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC731B1AEFD8180056C96A /* Team.m */; };
+		F7FC73201AF007460056C96A /* MappingRest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC731F1AF007460056C96A /* MappingRest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		F7FC73181AEFD3FD0056C96A /* ShotImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShotImages.m; path = Model/ShotImages.m; sourceTree = "<group>"; };
 		F7FC731A1AEFD8180056C96A /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Team.h; path = Model/Team.h; sourceTree = "<group>"; };
 		F7FC731B1AEFD8180056C96A /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Team.m; path = Model/Team.m; sourceTree = "<group>"; };
+		F7FC731E1AF007460056C96A /* MappingRest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MappingRest.h; path = Model/MappingRest.h; sourceTree = "<group>"; };
+		F7FC731F1AF007460056C96A /* MappingRest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MappingRest.m; path = Model/MappingRest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 			children = (
 				F7FC730D1AEFC6A30056C96A /* Requester.h */,
 				F7FC730E1AEFC6A30056C96A /* Requester.m */,
+				F7FC731E1AF007460056C96A /* MappingRest.h */,
+				F7FC731F1AF007460056C96A /* MappingRest.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				F7FC73191AEFD3FD0056C96A /* ShotImages.m in Sources */,
 				F7FC731C1AEFD8180056C96A /* Team.m in Sources */,
 				F7A7653D1AEFBEE10022AAC3 /* AppDelegate.m in Sources */,
+				F7FC73201AF007460056C96A /* MappingRest.m in Sources */,
 				F7A7653A1AEFBEE10022AAC3 /* main.m in Sources */,
 				F7FC73161AEFCC1E0056C96A /* Player.m in Sources */,
 				F7FC730A1AEFC3AC0056C96A /* Shots.m in Sources */,

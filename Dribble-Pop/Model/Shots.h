@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <RestKit/RestKit.h>
+#import "MappingRest.h"
 #import "ShotImages.h"
 #import "Player.h"
 #import "Team.h"
 
-@interface Shots : NSObject
+@interface Shots : NSObject <MappingRest>
 
 @property (nonatomic, strong) NSNumber* shotID;
 @property (nonatomic, strong) NSString* shotTitle;
