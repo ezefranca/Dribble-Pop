@@ -19,6 +19,8 @@
 		F7FC730F1AEFC6A30056C96A /* Requester.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC730E1AEFC6A30056C96A /* Requester.m */; };
 		F7FC73131AEFCC070056C96A /* ShotsRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73121AEFCC070056C96A /* ShotsRequester.m */; };
 		F7FC73161AEFCC1E0056C96A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73151AEFCC1E0056C96A /* Player.m */; };
+		F7FC73191AEFD3FD0056C96A /* ShotImages.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73181AEFD3FD0056C96A /* ShotImages.m */; };
+		F7FC731C1AEFD8180056C96A /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC731B1AEFD8180056C96A /* Team.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		F7FC73121AEFCC070056C96A /* ShotsRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShotsRequester.m; path = Model/Web/ShotsRequester.m; sourceTree = "<group>"; };
 		F7FC73141AEFCC1E0056C96A /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Model/Player.h; sourceTree = "<group>"; };
 		F7FC73151AEFCC1E0056C96A /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Model/Player.m; sourceTree = "<group>"; };
+		F7FC73171AEFD3FD0056C96A /* ShotImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShotImages.h; path = Model/ShotImages.h; sourceTree = "<group>"; };
+		F7FC73181AEFD3FD0056C96A /* ShotImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShotImages.m; path = Model/ShotImages.m; sourceTree = "<group>"; };
+		F7FC731A1AEFD8180056C96A /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Team.h; path = Model/Team.h; sourceTree = "<group>"; };
+		F7FC731B1AEFD8180056C96A /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Team.m; path = Model/Team.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,10 @@
 				F7FC73091AEFC3AC0056C96A /* Shots.m */,
 				F7FC73141AEFCC1E0056C96A /* Player.h */,
 				F7FC73151AEFCC1E0056C96A /* Player.m */,
+				F7FC73171AEFD3FD0056C96A /* ShotImages.h */,
+				F7FC73181AEFD3FD0056C96A /* ShotImages.m */,
+				F7FC731A1AEFD8180056C96A /* Team.h */,
+				F7FC731B1AEFD8180056C96A /* Team.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -333,6 +343,8 @@
 				F7A765401AEFBEE10022AAC3 /* ViewController.m in Sources */,
 				F7FC730F1AEFC6A30056C96A /* Requester.m in Sources */,
 				F7FC73131AEFCC070056C96A /* ShotsRequester.m in Sources */,
+				F7FC73191AEFD3FD0056C96A /* ShotImages.m in Sources */,
+				F7FC731C1AEFD8180056C96A /* Team.m in Sources */,
 				F7A7653D1AEFBEE10022AAC3 /* AppDelegate.m in Sources */,
 				F7A7653A1AEFBEE10022AAC3 /* main.m in Sources */,
 				F7FC73161AEFCC1E0056C96A /* Player.m in Sources */,
