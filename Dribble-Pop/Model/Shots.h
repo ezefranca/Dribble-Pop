@@ -10,6 +10,7 @@
 #import <RestKit/RestKit.h>
 #import "ShotImages.h"
 #import "Player.h"
+#import "Team.h"
 
 @interface Shots : NSObject
 
@@ -36,7 +37,7 @@
 @property (nonatomic, strong) NSString* shotURLRebounds;
 @property (nonatomic, strong) NSMutableArray* shotTags;
 @property (nonatomic, strong) Player* shotPlayer;
-@property (nonatomic, strong)
+@property (nonatomic, strong) Team* shotTeam;
 
 
 
