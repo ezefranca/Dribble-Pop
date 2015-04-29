@@ -10,6 +10,7 @@
 #import "ShotsRequester.h"
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *imgShot;
 
 @end
 

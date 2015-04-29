@@ -8,6 +8,16 @@
 
 #import "ShotImages.h"
 
+
 @implementation ShotImages
+
++ (RKObjectMapping *) mappingForEntity {
+    RKObjectMapping *postMapping = [RKObjectMapping mappingForClass:[ShotImages class]];
+    [postMapping addAttributeMappingsFromDictionary:@{
+                                                      @"hidpi"  : @"imgHidp",
+                                                      @"normal" : @"imgNormal",
+                                                      @"teaser" : @"imgTeaser"                                                      }];
+    return postMapping;
+}
 
 @end

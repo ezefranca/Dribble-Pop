@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Shots.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ViewController ()
 
@@ -18,7 +20,13 @@
 {
     [super viewDidLoad];
     [ShotsRequester.new getPopularPostsWithSuccessBlock:^(NSArray *results) {
-        NSLog(@"SUCESSO");
+        Shots *shots = [[Shots alloc]init];
+        shots = [results objectAtIndex:0];
+        NSString *imgURL = [shots.images objectForKey:@"teaser"];
+        [self.imgShot sd_setImageWithURL:[NSURL URLWithString:imgURL]
+                             placeholderImage:NO
+                                      options:SDWebImageRetryFailed];
+        NSLog(@"SUCESSO %@", shots.images);
     } errorBlock:^(NSError *error) {
          NSLog(@"ERRO");
     }];

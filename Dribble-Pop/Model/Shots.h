@@ -20,7 +20,7 @@
 @property (nonatomic, strong) NSString* shotDescription;
 @property (nonatomic, strong) NSNumber* shotWidth;
 @property (nonatomic, strong) NSNumber* shotHeight;
-@property (nonatomic, strong) ShotImages *images;
+@property (nonatomic, strong) NSMutableDictionary *images;
 @property (nonatomic, strong) NSNumber* shotViewsCount;
 @property (nonatomic, strong) NSNumber* shotLikesCount;
 @property (nonatomic, strong) NSNumber* shotCommentsCount;
