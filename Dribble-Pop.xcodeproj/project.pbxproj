@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DAE8E4854C1316E6110272AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BB159FFFC11BAEFD238EC1 /* libPods.a */; };
+		F74D74CB1AF29C29002F23B0 /* DetalhesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D74CA1AF29C29002F23B0 /* DetalhesViewController.m */; };
 		F7A7653A1AEFBEE10022AAC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A765391AEFBEE10022AAC3 /* main.m */; };
 		F7A7653D1AEFBEE10022AAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7653C1AEFBEE10022AAC3 /* AppDelegate.m */; };
 		F7A765401AEFBEE10022AAC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7653F1AEFBEE10022AAC3 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		A39272712AF080C74D1CE23E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1999F36CD77E7899C8B5822 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D0BB159FFFC11BAEFD238EC1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74D74C91AF29C29002F23B0 /* DetalhesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalhesViewController.h; sourceTree = "<group>"; };
+		F74D74CA1AF29C29002F23B0 /* DetalhesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalhesViewController.m; sourceTree = "<group>"; };
 		F7A765341AEFBEE10022AAC3 /* Dribble-Pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dribble-Pop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A765381AEFBEE10022AAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A765391AEFBEE10022AAC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 			children = (
 				F7A7653E1AEFBEE10022AAC3 /* ViewController.h */,
 				F7A7653F1AEFBEE10022AAC3 /* ViewController.m */,
+				F74D74C91AF29C29002F23B0 /* DetalhesViewController.h */,
+				F74D74CA1AF29C29002F23B0 /* DetalhesViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				F7A7653D1AEFBEE10022AAC3 /* AppDelegate.m in Sources */,
 				F7A7653A1AEFBEE10022AAC3 /* main.m in Sources */,
 				F7FC73161AEFCC1E0056C96A /* Player.m in Sources */,
+				F74D74CB1AF29C29002F23B0 /* DetalhesViewController.m in Sources */,
 				F7FC730A1AEFC3AC0056C96A /* Shots.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

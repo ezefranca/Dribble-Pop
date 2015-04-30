@@ -83,4 +83,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)imageTouch:(id)sender {
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"detalhes"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 @end

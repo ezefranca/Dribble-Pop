@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ShotsRequester.h"
+#import "DetalhesViewController.h"
 
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imgShot;
+- (IBAction)imageTouch:(id)sender;
 
 @end
 
