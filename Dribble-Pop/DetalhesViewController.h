@@ -10,4 +10,6 @@
 
 @interface DetalhesViewController : UIViewController
 
+#define NOTICATION_DETALHES_DRIBBLE @"detalhesDribble"
+
 @end
