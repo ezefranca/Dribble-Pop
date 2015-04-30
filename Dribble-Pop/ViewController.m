@@ -22,11 +22,11 @@
     [ShotsRequester.new getPopularPostsWithSuccessBlock:^(NSArray *results) {
         Shots *shots = [[Shots alloc]init];
         shots = [results objectAtIndex:0];
-        NSString *imgURL = [shots.images objectForKey:@"teaser"];
+        NSString *imgURL = shots.images.imgNormal;
         [self.imgShot sd_setImageWithURL:[NSURL URLWithString:imgURL]
-                             placeholderImage:NO
+                             placeholderImage:NULL
                                       options:SDWebImageRetryFailed];
-        NSLog(@"SUCESSO %@", shots.images);
+        NSLog(@"SUCESSO %@", shots.images.imgNormal);
     } errorBlock:^(NSError *error) {
          NSLog(@"ERRO");
     }];

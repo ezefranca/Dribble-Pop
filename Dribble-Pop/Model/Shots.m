@@ -7,6 +7,7 @@
 //
 
 #import "Shots.h"
+#import "ShotImages.h"
 
 @implementation Shots
 
@@ -18,7 +19,7 @@
                                                       @"description"  : @"shotDescription",
                                                       @"width": @"shotWidth",
                                                       @"height": @"shotHeight",
-                                                      @"images": @"images",
+                                                     // @"images": @"images",
                                                       @"views_count": @"shotViewsCount",
                                                       @"likes_count": @"shotLikesCount",
                                                       @"comments_count" : @"shotCommentsCount",
@@ -39,7 +40,20 @@
 //                                                      @"user" : @"shotPlayer",
                                                       @"team" : @"shotPlayer"
                                                       }];
+    
+   [postMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"images" toKeyPath:@"images" withMapping:[[self class] images]]];
     return postMapping;
+}
+
++ (RKObjectMapping *)images {
+    
+    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[ShotImages class]];
+    
+    [mapping addAttributeMappingsFromDictionary:@{@"hidpi"  : @"imgHidp",
+                                                  @"normal" : @"imgNormal",
+                                                  @"teaser" : @"imgTeaser"  }];
+    
+    return mapping;
 }
 
 @end

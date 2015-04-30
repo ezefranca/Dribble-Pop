@@ -11,13 +11,22 @@
 
 @implementation ShotImages
 
-+ (RKObjectMapping *) mappingForEntity {
-    RKObjectMapping *postMapping = [RKObjectMapping mappingForClass:[ShotImages class]];
-    [postMapping addAttributeMappingsFromDictionary:@{
-                                                      @"hidpi"  : @"imgHidp",
-                                                      @"normal" : @"imgNormal",
-                                                      @"teaser" : @"imgTeaser"                                                      }];
-    return postMapping;
+//+ (RKObjectMapping *) mappingForEntity {
+//    RKObjectMapping *postMapping = [RKObjectMapping mappingForClass:[ShotImages class]];
+//    [postMapping addAttributeMappingsFromDictionary:@{
+//                                                      @"hidpi"  : @"imgHidp",
+//                                                      @"normal" : @"imgNormal",
+//                                                      @"teaser" : @"imgTeaser"                                                      }];
+//    return postMapping;
+//}
+//
++ (instancetype)objectiveWithType:(ShotImages*)type {
+    ShotImages *img = ShotImages.new;
+   
+//    img.imgNormal = @(type.imgNormal);
+//    img.imgHidp = @(type.imgHidp);
+//    img.imgTeaser = @(type.imgTeaser);
+    return img;
 }
 
 @end
