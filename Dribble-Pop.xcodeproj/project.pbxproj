@@ -16,6 +16,8 @@
 		F7A765451AEFBEE10022AAC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A765441AEFBEE10022AAC3 /* Images.xcassets */; };
 		F7A765481AEFBEE10022AAC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A765461AEFBEE10022AAC3 /* LaunchScreen.xib */; };
 		F7A765541AEFBEE20022AAC3 /* Dribble_PopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A765531AEFBEE20022AAC3 /* Dribble_PopTests.m */; };
+		F7AD5EBD1AF35FB1008CD85C /* ShootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AD5EBB1AF35FB1008CD85C /* ShootCell.m */; };
+		F7AD5EBE1AF35FB1008CD85C /* ShootCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7AD5EBC1AF35FB1008CD85C /* ShootCell.xib */; };
 		F7FC730A1AEFC3AC0056C96A /* Shots.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73091AEFC3AC0056C96A /* Shots.m */; };
 		F7FC730F1AEFC6A30056C96A /* Requester.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC730E1AEFC6A30056C96A /* Requester.m */; };
 		F7FC73131AEFCC070056C96A /* ShotsRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73121AEFCC070056C96A /* ShotsRequester.m */; };
@@ -53,6 +55,9 @@
 		F7A7654D1AEFBEE20022AAC3 /* Dribble-PopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dribble-PopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A765521AEFBEE20022AAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A765531AEFBEE20022AAC3 /* Dribble_PopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dribble_PopTests.m; sourceTree = "<group>"; };
+		F7AD5EBA1AF35FB1008CD85C /* ShootCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShootCell.h; path = Model/Cell/ShootCell.h; sourceTree = "<group>"; };
+		F7AD5EBB1AF35FB1008CD85C /* ShootCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShootCell.m; path = Model/Cell/ShootCell.m; sourceTree = "<group>"; };
+		F7AD5EBC1AF35FB1008CD85C /* ShootCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShootCell.xib; path = Model/Cell/ShootCell.xib; sourceTree = "<group>"; };
 		F7FC73081AEFC3AC0056C96A /* Shots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shots.h; path = Model/Shots.h; sourceTree = "<group>"; };
 		F7FC73091AEFC3AC0056C96A /* Shots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shots.m; path = Model/Shots.m; sourceTree = "<group>"; };
 		F7FC730D1AEFC6A30056C96A /* Requester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Requester.h; path = Model/Requester.h; sourceTree = "<group>"; };
@@ -166,9 +171,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F7AD5EB91AF35F70008CD85C /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7AD5EBA1AF35FB1008CD85C /* ShootCell.h */,
+				F7AD5EBB1AF35FB1008CD85C /* ShootCell.m */,
+				F7AD5EBC1AF35FB1008CD85C /* ShootCell.xib */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		F7FC73071AEFC3710056C96A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7AD5EB91AF35F70008CD85C /* Custom Cell */,
 				F7FC73101AEFCBE40056C96A /* Web */,
 				F7FC73081AEFC3AC0056C96A /* Shots.h */,
 				F7FC73091AEFC3AC0056C96A /* Shots.m */,
@@ -297,6 +313,7 @@
 				F7A765431AEFBEE10022AAC3 /* Main.storyboard in Resources */,
 				F7A765481AEFBEE10022AAC3 /* LaunchScreen.xib in Resources */,
 				F7A765451AEFBEE10022AAC3 /* Images.xcassets in Resources */,
+				F7AD5EBE1AF35FB1008CD85C /* ShootCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A765401AEFBEE10022AAC3 /* ViewController.m in Sources */,
+				F7AD5EBD1AF35FB1008CD85C /* ShootCell.m in Sources */,
 				F7FC730F1AEFC6A30056C96A /* Requester.m in Sources */,
 				F7FC73131AEFCC070056C96A /* ShotsRequester.m in Sources */,
 				F7FC73191AEFD3FD0056C96A /* ShotImages.m in Sources */,

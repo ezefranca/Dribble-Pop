@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ShotsRequester.h"
 #import "DetalhesViewController.h"
+#import "ShootCell.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *imgShot;
 - (IBAction)imageTouch:(id)sender;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
