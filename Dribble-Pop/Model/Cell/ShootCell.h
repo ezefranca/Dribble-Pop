@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ShootCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *imageShoot;
+@property (strong, nonatomic) IBOutlet UILabel *titleShoot;
 
 @end

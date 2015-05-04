@@ -12,21 +12,22 @@
 #import "ShotImages.h"
 #import "Player.h"
 #import "Team.h"
+#import "Tags.h"
 
 @interface Shots : NSObject <MappingRest>
 
-@property (nonatomic, strong) NSNumber* shotID;
+@property (nonatomic, assign) int shotID;
 @property (nonatomic, strong) NSString* shotTitle;
 @property (nonatomic, strong) NSString* shotDescription;
-@property (nonatomic, strong) NSNumber* shotWidth;
-@property (nonatomic, strong) NSNumber* shotHeight;
+@property (nonatomic, assign) int shotWidth;
+@property (nonatomic, assign) int shotHeight;
 @property (nonatomic, strong) ShotImages *images;
-@property (nonatomic, strong) NSNumber* shotViewsCount;
-@property (nonatomic, strong) NSNumber* shotLikesCount;
-@property (nonatomic, strong) NSNumber* shotCommentsCount;
-@property (nonatomic, strong) NSNumber* shotAttachmentsCount;
-@property (nonatomic, strong) NSNumber* shotReboundsCount;
-@property (nonatomic, strong) NSNumber* shotBucketsCount;
+@property (nonatomic, assign) int shotViewsCount;
+@property (nonatomic, assign) int shotLikesCount;
+@property (nonatomic, assign) int shotCommentsCount;
+@property (nonatomic, assign) int shotAttachmentsCount;
+@property (nonatomic, assign) int shotReboundsCount;
+@property (nonatomic, assign) int shotBucketsCount;
 @property (nonatomic, strong) NSString* shotCreatedDate;
 @property (nonatomic, strong) NSString* shotUpdateDate;
 @property (nonatomic, strong) NSString* shotURLHtm;
@@ -36,8 +37,8 @@
 @property (nonatomic, strong) NSString* shotURLLikes;
 @property (nonatomic, strong) NSString* shotURLProjects;
 @property (nonatomic, strong) NSString* shotURLRebounds;
-@property (nonatomic, strong) NSMutableArray* shotTags;
-@property (nonatomic, strong) Player* shotPlayer;
+@property (nonatomic, strong) Tags* shotTags;
+@property (nonatomic, strong) Player* user;
 @property (nonatomic, strong) Team* shotTeam;
 
 

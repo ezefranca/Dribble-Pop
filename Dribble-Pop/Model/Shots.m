@@ -19,7 +19,7 @@
                                                       @"description"  : @"shotDescription",
                                                       @"width": @"shotWidth",
                                                       @"height": @"shotHeight",
-                                                     // @"images": @"images",
+                                                      //@"images": @"images",
                                                       @"views_count": @"shotViewsCount",
                                                       @"likes_count": @"shotLikesCount",
                                                       @"comments_count" : @"shotCommentsCount",
@@ -37,10 +37,10 @@
                                                       @"projects_url" : @"shotURLProjects" ,
                                                       @"rebounds_url" : @"shotURLRebounds",
                                                       @"tags" : @"shotTags",
-//                                                      @"user" : @"shotPlayer",
-                                                      @"team" : @"shotPlayer"
+                                                      //@"user" : @"shotPlayer",
+                                                      @"team" : @"shotTeam"
                                                       }];
-    
+   [postMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"user" toKeyPath:@"user" withMapping:[[self class] user]]];
    [postMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"images" toKeyPath:@"images" withMapping:[[self class] images]]];
     return postMapping;
 }
@@ -54,6 +54,22 @@
                                                   @"teaser" : @"imgTeaser"  }];
     
     return mapping;
+}
+
++ (RKObjectMapping *)user {
+    
+    RKObjectMapping *map = [RKObjectMapping mappingForClass:[Player class]];
+    
+    [map addAttributeMappingsFromDictionary:@{@"id" : @"playerID",
+                                              @"name"  : @"playerName",
+                                              @"username" : @"playerUserName",
+                                              @"html_url" : @"playerURL",
+                                              @"avatar_url" : @"playerAvatar",
+                                              @"bio" : @"playerBio",
+                                              @"location" : @"playerLocation",
+                                              @"links" : @"playerLinks"}];
+    
+    return map;
 }
 
 @end

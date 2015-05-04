@@ -10,4 +10,9 @@
 
 @implementation Player
 
++ (instancetype)objectiveWithType:(Player*)type {
+    Player *ply = Player.new;
+    return ply;
+}
+
 @end

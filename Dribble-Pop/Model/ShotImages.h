@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MappingRest.h"
 
-@interface ShotImages : NSObject <MappingRest>
+@interface ShotImages : NSObject
 
 @property (nonatomic, strong) NSString* imgHidp;
 @property (nonatomic, strong) NSString* imgNormal;

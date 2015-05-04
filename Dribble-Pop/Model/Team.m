@@ -10,4 +10,10 @@
 
 @implementation Team
 
++ (instancetype)objectiveWithType:(Team*)type {
+    Team *time = Team.new;
+    return time;
+}
+
 @end
+

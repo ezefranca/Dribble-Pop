@@ -11,9 +11,9 @@
 #import "DetalhesViewController.h"
 #import "ShootCell.h"
 
+#define NOTICATION_DETALHES_DRIBBLE @"detalhesDribble"
+
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (strong, nonatomic) IBOutlet UIImageView *imgShot;
-- (IBAction)imageTouch:(id)sender;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
