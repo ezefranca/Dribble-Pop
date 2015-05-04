@@ -10,4 +10,13 @@
 
 @interface Player : NSObject
 
+@property (nonatomic, assign) int playerID;
+@property (nonatomic, strong) NSString* playerName;
+@property (nonatomic, strong) NSString* playerUserName;
+@property (nonatomic, strong) NSString* playerURL;
+@property (nonatomic, strong) NSString* playerAvatar;
+@property (nonatomic, strong) NSString* playerBio;
+@property (nonatomic, strong) NSString* playerLocation;
+@property (nonatomic, strong) NSArray*  playerLinks;
+
 @end

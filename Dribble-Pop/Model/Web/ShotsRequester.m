@@ -11,28 +11,28 @@
 
 @implementation ShotsRequester
 
-//-(void)getPopularPostsWithSuccessBlock:(void (^)(NSArray *results))successBlock errorBlock:(void (^)(NSError *error))errorBlock :(int)page :(BOOL)isVip{
-//    
-//    RKResponseDescriptor *responseDescriptor =  [RKResponseDescriptor responseDescriptorWithMapping:[Shots mappingForEntity]
-//                                                                                             method:RKRequestMethodGET
-//                                                                                        pathPattern:nil
-//                                                                                            keyPath:nil
-//                                                                                        statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-//    
-//    NSURLRequest *request = [self createRequestWithObject:self HTTPMethod:RKRequestMethodGET path:url parameters:nil];
-//    
-//    RKObjectRequestOperation *op = [self createRequestOperationWithResponseDescriptors:@[responseDescriptor] andRequest:request successBlock:^(NSArray *results) {
-//        if (successBlock) {
-//            successBlock(results);
-//        }
-//    } andErrorBlock:^(NSError *error) {
-//        if (errorBlock) {
-//            errorBlock(error);
-//        }
-//    }];
-//    
-//    [self addOperationToQueue:op];
-//    
-//}
+-(void)getPopularPostsWithSuccessBlock:(void (^)(NSArray *results))successBlock errorBlock:(void (^)(NSError *error))errorBlock {
+    
+    RKResponseDescriptor *responseDescriptor =  [RKResponseDescriptor responseDescriptorWithMapping:[Shots mappingForEntity]
+                                                                                             method:RKRequestMethodGET
+                                                                                        pathPattern:nil
+                                                                                            keyPath:nil
+                                                                                        statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    NSURLRequest *request = [self createRequestWithObject:self HTTPMethod:RKRequestMethodGET path:DRIBBLE_URL parameters:nil];
+    
+    RKObjectRequestOperation *op = [self createRequestOperationWithResponseDescriptors:@[responseDescriptor] andRequest:request successBlock:^(NSArray *results) {
+        if (successBlock) {
+            successBlock(results);
+        }
+    } andErrorBlock:^(NSError *error) {
+        if (errorBlock) {
+            errorBlock(error);
+        }
+    }];
+    
+    [self addOperationToQueue:op];
+    
+}
 
 @end

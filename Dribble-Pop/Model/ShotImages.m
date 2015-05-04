@@ -8,6 +8,16 @@
 
 #import "ShotImages.h"
 
+
 @implementation ShotImages
+
++ (instancetype)objectiveWithType:(ShotImages*)type {
+    ShotImages *img = ShotImages.new;
+   
+//    img.imgNormal = @(type.imgNormal);
+//    img.imgHidp = @(type.imgHidp);
+//    img.imgTeaser = @(type.imgTeaser);
+    return img;
+}
 
 @end

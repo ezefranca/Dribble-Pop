@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DAE8E4854C1316E6110272AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BB159FFFC11BAEFD238EC1 /* libPods.a */; };
+		F74D74CB1AF29C29002F23B0 /* DetalhesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D74CA1AF29C29002F23B0 /* DetalhesViewController.m */; };
 		F7A7653A1AEFBEE10022AAC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A765391AEFBEE10022AAC3 /* main.m */; };
 		F7A7653D1AEFBEE10022AAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7653C1AEFBEE10022AAC3 /* AppDelegate.m */; };
 		F7A765401AEFBEE10022AAC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7653F1AEFBEE10022AAC3 /* ViewController.m */; };
@@ -15,6 +16,9 @@
 		F7A765451AEFBEE10022AAC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A765441AEFBEE10022AAC3 /* Images.xcassets */; };
 		F7A765481AEFBEE10022AAC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A765461AEFBEE10022AAC3 /* LaunchScreen.xib */; };
 		F7A765541AEFBEE20022AAC3 /* Dribble_PopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A765531AEFBEE20022AAC3 /* Dribble_PopTests.m */; };
+		F7AD5EBD1AF35FB1008CD85C /* ShootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AD5EBB1AF35FB1008CD85C /* ShootCell.m */; };
+		F7AD5EBE1AF35FB1008CD85C /* ShootCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7AD5EBC1AF35FB1008CD85C /* ShootCell.xib */; };
+		F7AD5EC91AF6FE04008CD85C /* Tags.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AD5EC81AF6FE04008CD85C /* Tags.m */; };
 		F7FC730A1AEFC3AC0056C96A /* Shots.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73091AEFC3AC0056C96A /* Shots.m */; };
 		F7FC730F1AEFC6A30056C96A /* Requester.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC730E1AEFC6A30056C96A /* Requester.m */; };
 		F7FC73131AEFCC070056C96A /* ShotsRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC73121AEFCC070056C96A /* ShotsRequester.m */; };
@@ -37,6 +41,8 @@
 		A39272712AF080C74D1CE23E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1999F36CD77E7899C8B5822 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D0BB159FFFC11BAEFD238EC1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74D74C91AF29C29002F23B0 /* DetalhesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalhesViewController.h; sourceTree = "<group>"; };
+		F74D74CA1AF29C29002F23B0 /* DetalhesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalhesViewController.m; sourceTree = "<group>"; };
 		F7A765341AEFBEE10022AAC3 /* Dribble-Pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dribble-Pop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A765381AEFBEE10022AAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A765391AEFBEE10022AAC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +56,11 @@
 		F7A7654D1AEFBEE20022AAC3 /* Dribble-PopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dribble-PopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A765521AEFBEE20022AAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A765531AEFBEE20022AAC3 /* Dribble_PopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dribble_PopTests.m; sourceTree = "<group>"; };
+		F7AD5EBA1AF35FB1008CD85C /* ShootCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShootCell.h; path = Model/Cell/ShootCell.h; sourceTree = "<group>"; };
+		F7AD5EBB1AF35FB1008CD85C /* ShootCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShootCell.m; path = Model/Cell/ShootCell.m; sourceTree = "<group>"; };
+		F7AD5EBC1AF35FB1008CD85C /* ShootCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShootCell.xib; path = Model/Cell/ShootCell.xib; sourceTree = "<group>"; };
+		F7AD5EC71AF6FE04008CD85C /* Tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tags.h; path = Model/Tags.h; sourceTree = "<group>"; };
+		F7AD5EC81AF6FE04008CD85C /* Tags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tags.m; path = Model/Tags.m; sourceTree = "<group>"; };
 		F7FC73081AEFC3AC0056C96A /* Shots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shots.h; path = Model/Shots.h; sourceTree = "<group>"; };
 		F7FC73091AEFC3AC0056C96A /* Shots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shots.m; path = Model/Shots.m; sourceTree = "<group>"; };
 		F7FC730D1AEFC6A30056C96A /* Requester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Requester.h; path = Model/Requester.h; sourceTree = "<group>"; };
@@ -62,6 +73,7 @@
 		F7FC73181AEFD3FD0056C96A /* ShotImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShotImages.m; path = Model/ShotImages.m; sourceTree = "<group>"; };
 		F7FC731A1AEFD8180056C96A /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Team.h; path = Model/Team.h; sourceTree = "<group>"; };
 		F7FC731B1AEFD8180056C96A /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Team.m; path = Model/Team.m; sourceTree = "<group>"; };
+		F7FC731E1AF007460056C96A /* MappingRest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MappingRest.h; path = Model/MappingRest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,9 +174,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F7AD5EB91AF35F70008CD85C /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7AD5EBA1AF35FB1008CD85C /* ShootCell.h */,
+				F7AD5EBB1AF35FB1008CD85C /* ShootCell.m */,
+				F7AD5EBC1AF35FB1008CD85C /* ShootCell.xib */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		F7FC73071AEFC3710056C96A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7AD5EB91AF35F70008CD85C /* Custom Cell */,
 				F7FC73101AEFCBE40056C96A /* Web */,
 				F7FC73081AEFC3AC0056C96A /* Shots.h */,
 				F7FC73091AEFC3AC0056C96A /* Shots.m */,
@@ -174,6 +197,8 @@
 				F7FC73181AEFD3FD0056C96A /* ShotImages.m */,
 				F7FC731A1AEFD8180056C96A /* Team.h */,
 				F7FC731B1AEFD8180056C96A /* Team.m */,
+				F7AD5EC71AF6FE04008CD85C /* Tags.h */,
+				F7AD5EC81AF6FE04008CD85C /* Tags.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -183,6 +208,8 @@
 			children = (
 				F7A7653E1AEFBEE10022AAC3 /* ViewController.h */,
 				F7A7653F1AEFBEE10022AAC3 /* ViewController.m */,
+				F74D74C91AF29C29002F23B0 /* DetalhesViewController.h */,
+				F74D74CA1AF29C29002F23B0 /* DetalhesViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -192,6 +219,7 @@
 			children = (
 				F7FC730D1AEFC6A30056C96A /* Requester.h */,
 				F7FC730E1AEFC6A30056C96A /* Requester.m */,
+				F7FC731E1AF007460056C96A /* MappingRest.h */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -290,6 +318,7 @@
 				F7A765431AEFBEE10022AAC3 /* Main.storyboard in Resources */,
 				F7A765481AEFBEE10022AAC3 /* LaunchScreen.xib in Resources */,
 				F7A765451AEFBEE10022AAC3 /* Images.xcassets in Resources */,
+				F7AD5EBE1AF35FB1008CD85C /* ShootCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,13 +370,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A765401AEFBEE10022AAC3 /* ViewController.m in Sources */,
+				F7AD5EBD1AF35FB1008CD85C /* ShootCell.m in Sources */,
 				F7FC730F1AEFC6A30056C96A /* Requester.m in Sources */,
 				F7FC73131AEFCC070056C96A /* ShotsRequester.m in Sources */,
 				F7FC73191AEFD3FD0056C96A /* ShotImages.m in Sources */,
 				F7FC731C1AEFD8180056C96A /* Team.m in Sources */,
 				F7A7653D1AEFBEE10022AAC3 /* AppDelegate.m in Sources */,
 				F7A7653A1AEFBEE10022AAC3 /* main.m in Sources */,
+				F7AD5EC91AF6FE04008CD85C /* Tags.m in Sources */,
 				F7FC73161AEFCC1E0056C96A /* Player.m in Sources */,
+				F74D74CB1AF29C29002F23B0 /* DetalhesViewController.m in Sources */,
 				F7FC730A1AEFC3AC0056C96A /* Shots.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
