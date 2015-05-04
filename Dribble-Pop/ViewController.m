@@ -36,10 +36,10 @@
 -(void)requestFromDribble{
     [ShotsRequester.new getPopularPostsWithSuccessBlock:^(NSArray *results) {
         allShots = [[NSMutableArray alloc]initWithArray:results];
-        NSLog(@"SUCESSO %@", [allShots objectAtIndex:0]);
+        //NSLog(@"SUCESSO %@", [allShots objectAtIndex:0]);
         [self.tableView reloadData];
     } errorBlock:^(NSError *error) {
-        NSLog(@"ERRO");
+        //NSLog(@"ERRO");
     }];
 
 }
@@ -53,7 +53,7 @@
     ShootCell *cell = [tableView dequeueReusableCellWithIdentifier:
                          cellID];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"ShootCell" owner:nil options:nil] firstObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"ShootCell" owner:self options:nil] firstObject];
     }
     
     if (allShots != nil) {
@@ -94,7 +94,7 @@
     UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"detalhes"];
     [self.navigationController pushViewController:controller animated:YES];
    // [[NSNotificationCenter defaultCenter]postNotificationName:NOTICATION_DETALHES_DRIBBLE object:imgURL];
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"imagemURL"]);
+   //  NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"imagemURL"]);
 }
 #pragma mark - PERSISTENCIA
 
@@ -106,9 +106,9 @@
     [[NSUserDefaults standardUserDefaults] setObject:shot.user.playerAvatar forKey:@"playerAVATAR"];
     [[NSUserDefaults standardUserDefaults] setObject:shot.user.playerUserName forKey:@"playerUSERNAME"];
     [[NSUserDefaults standardUserDefaults] setObject:shot.user.playerURL forKey:@"playerURL"];
-    NSLog(@"%@", shot.shotDescription);
+    //NSLog(@"%@", shot.shotDescription);
     [[NSUserDefaults standardUserDefaults] synchronize];
-    NSLog(@"Persistiu");
+    //NSLog(@"Persistiu");
 }
 
 @end

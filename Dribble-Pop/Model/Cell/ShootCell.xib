@@ -18,26 +18,24 @@
                     </imageView>
                     <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYa-lC-Wxs">
                         <rect key="frame" x="0.0" y="218" width="320" height="101"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="....." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrk-3J-Hop">
-                                <rect key="frame" x="5" y="35" width="262" height="56"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="euQ-NW-soe">
-                                <rect key="frame" x="263" y="18" width="64" height="64"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="....." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrk-3J-Hop">
+                        <rect key="frame" x="20" y="256" width="280" height="56"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="euQ-NW-soe">
+                        <rect key="frame" x="267" y="235" width="64" height="64"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imageShoot" destination="g9b-ut-Ojo" id="DM2-Nx-KMa"/>
-                <outlet property="titleShoot" destination="xrk-3J-Hop" id="CzS-60-tYI"/>
+                <outlet property="imageShoot" destination="g9b-ut-Ojo" id="ub8-3m-Hgp"/>
+                <outlet property="titleShoot" destination="xrk-3J-Hop" id="LWF-YO-Pv7"/>
             </connections>
-            <point key="canvasLocation" x="-386" y="458"/>
+            <point key="canvasLocation" x="-480" y="458"/>
         </tableViewCell>
     </objects>
     <resources>
